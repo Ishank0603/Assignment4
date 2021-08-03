@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color:#f8f9fa ;
+}
+nav{
+    display: flex;
+    background-color: #52b788;
+    justify-content: space-between;
+    align-items: center;
+   padding-left: 3%;
+   padding-right: 3%;
+   padding-top:1%;
+   padding-bottom: 1%;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+a{
+    text-decoration: none;
+    font-size: 22px;
+}
+@media screen and (max-width:700px){
+    nav,ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#ani{
+    border: black 2px solid;
+    height: 500px;
+    width:  90vw;
+    margin-left: 5%;
+    margin-right:5%;
+    display: flex;
+    flex-wrap: wrap;
+    animation: change 20s infinite linear forwards normal;
+}
+@keyframes change {
+    0%{
+        background-image: url(https://sportstar.thehindu.com/cricket/article27267688.ece/ALTERNATES/LANDSCAPE_1200/GettyImages-1146184245jpg);
+        background-size: cover;
+    }
+    20%{
+        background-image: url(https://sportstar.thehindu.com/cricket/article27267688.ece/ALTERNATES/LANDSCAPE_1200/GettyImages-1146184245jpg);
+        background-size: cover;
+    }
+    40%{
+        background-image: url(https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-7q7j1gteskvd153vc5d9tr4sc0-20190528182116.Medi.jpeg);
+        background-size: cover;
+    }
+
+    60%{
+        background-size: cover;
+        background-image: url(https://s01.sgp1.cdn.digitaloceanspaces.com/article/161185-ioooxhwzqw-1625564390.jpg);
+    }
+    80%{
+        background-size: cover;
+        background-image: url(https://dc-cdn.s3-ap-southeast-1.amazonaws.com/dc-Cover-dfss9ecp60iaa0hs3msigvpe32-20160404125026.Medi.jpeg);
+    }
+    100%{
+        background-size: cover;
+        background-image: url(https://sportstar.thehindu.com/cricket/article27267688.ece/ALTERNATES/LANDSCAPE_1200/GettyImages-1146184245jpg);
+    }
+}
+#cards{
+    width: 75 vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+figure{
+    width: 300px;
+    border:1px solid #ccc;
+    margin:20px;
+    text-align: center;
+    box-shadow: 0px 0px 7px rgb(104,104,104);
+    transition: 1000ms;
+}
+figure img{
+    height: 200px;
+    width: 100%;
+}
+figcaption p{
+    font-weight: 300;
+}
+figure:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgb(104,104,104);
+}
+footer{
+    background-color:#6b705c ;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: seashell;
+}
+#f1{
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#f2{
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#f3{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#f1 #ul{
+    list-style: none;
+    width: 400px;
+}
+#f1 #ul h2{
+ align-self: center;
+}
+#f1 #ul li{
+    padding-left: 20px;
+    font-size: 20px;
+}
+#f2 #ul2{
+    list-style: none;
+    width: 400px;
+}
+#f2 #ul2 h2{
+ align-self: center;
+}
+#f2 #ul2 li{
+    padding-left: 20px;
+    font-size: 20px;
+}
+#f3 #ul3{
+    list-style: none;
+    width: 400px;
+}
+#f3 #ul3 h2{
+ align-self: center;
+}
+#f3 #ul3 li{
+    padding-left: 20px;
+    font-size: 20px;
+}
